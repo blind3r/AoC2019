@@ -7,7 +7,23 @@ import java.util.List;
 
 public class RunAoC {
     public static void main(String[] args) throws Exception {
-        runDay2();
+        runDay4();
+    }
+
+    public static void runDay4() throws IOException {    
+        Day4 day4 = new Day4();
+        System.out.println("-> Day 4");
+        System.out.print("part 1: " + day4.part1());
+       // System.out.print(" - part 2: " + day3.part2(input));
+    }
+
+    public static void runDay3() throws IOException {
+        List<String> input = Files.readAllLines(Paths.get("bin/inputs/" + Day3.FILE_NAME));
+        
+        Day3 day3 = new Day3();
+        System.out.println("-> Day 3");
+        System.out.print("part 1: " + day3.part1(input));
+        System.out.print(" - part 2: " + day3.part2(input));
     }
 
     public static void runDay2() throws Exception {
